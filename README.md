@@ -1,0 +1,70 @@
+This Python-based toolkit is a collection of beginner-to-intermediate level utilities designed for educational purposes in the areas of:
+
+Cryptography
+
+Network analysis
+
+Password security
+
+System monitoring
+
+Each tool is a standalone script with its own functionality and can be used individually.
+
+✅ Ethical Use Only
+All tools are intended for learning, demonstrations, or use on systems/networks you own or have permission to access.
+
+🧰 Included Tools
+| Tool No. | Name                                  | Description                                                                                    |
+| -------- | ------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 1        | Caesar Cipher Tool                    | Encrypt/decrypt messages using a simple letter-shifting algorithm.                             |
+| 2        | Image Encryption Tool                 | Encrypt and decrypt images by manipulating RGB pixel values with a numeric key.                |
+| 3        | Password Strength Checker + Generator | Check if a password is strong, and generate secure random ones.                                |
+| 4        | Keylogger (Basic)                     | Capture and save keyboard inputs to a file.                                                    |
+| 5        | Packet Sniffer                        | Capture network traffic to/from a specified target and analyze protocols, ports, and payloads. |
+
+🛠 Requirements
+All tools require Python 3.x. Some tools require external libraries:
+| Tool       | Required Library |
+| ---------- | ---------------- |
+| Image Tool | `Pillow`         |
+| Keylogger  | `pynput`         |
+| Sniffer    | `scapy`          |
+
+Install dependencies via:
+pip install pillow pynput scapy
+
+🔧 How to Run
+Each script is standalone. To run a specific tool:
+python tool_name.py
+
+For example:
+python caesar_cipher.py
+python password_tool.py
+
+⚠️ The packet sniffer and keylogger may require admin/root privileges to function correctly.
+
+📁 File Structure (Example)
+/cybersecurity_toolkit/
+│
+├── caesar_cipher.py
+├── image_encryptor.py
+├── password_tool.py
+├── keylogger.py
+├── packet_sniffer.py
+├── README.md                ← This file
+├── keylog.txt               ← Output from keylogger
+├── encrypted_image.png      ← Output from image tool
+├── decrypted_image.png
+└── requirements.txt         ← Optional: pip dependencies list
+
+⚠️ Legal & Ethical Notice
+This toolkit is provided for educational use only. Do not use it for monitoring, intercepting, or logging data on devices or networks you do not own or administer.
+
+🙌 Acknowledgements
+This project uses:
+
+Scapy for packet sniffing
+
+Pillow for image processing
+
+pynput for capturing keystrokes
