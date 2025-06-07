@@ -1,0 +1,65 @@
+Packet Sniffer Tool (with IP/URL Filtering and Port Analysis)
+🧪 Overview
+This Python-based packet sniffer captures and analyzes network traffic in real-time. It displays important packet-level data like:
+
+Source & destination IP addresses
+
+Protocol types (TCP/UDP)
+
+Source & destination ports
+
+Common service names for major ports
+
+Truncated payload data
+
+Users can specify a target IP or URL to monitor only relevant traffic.
+
+⚠️ Ethical Use Only
+📢 This tool is strictly for educational, testing, or administrative use on networks you own or have explicit permission to monitor. Unauthorized packet sniffing is illegal.
+
+🚀 Features
+✅ Live packet capture
+✅ Filters packets by target IP or resolved domain
+✅ Displays port numbers and maps them to common services
+✅ Shows payload data (truncated to 100 characters)
+✅ Protocol detection: TCP, UDP, and others
+
+🛠 Requirements
+Python 3.x
+
+scapy library
+
+Install with:
+pip install scapy
+
+📦 How to Use
+Run the script as administrator/root:
+sudo python packet_sniffer.py
+
+Enter a target IP or domain:
+
+Live sniffing starts:
+
+Press Ctrl+C to stop
+
+ Major Port Mapping
+Port numbers are mapped to well-known services:
+
+80 → HTTP
+
+443 → HTTPS
+
+22 → SSH
+
+53 → DNS
+
+3306 → MySQL
+
+… and more from a built-in list of major ports.
+
+📌 Notes
+Works on the default network interface.
+
+Packet data is read live — no pcap files required.
+
+Extendable to include deeper packet inspection or saving to files.

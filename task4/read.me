@@ -1,0 +1,48 @@
+Basic Keylogger (Keystroke Logger for Educational Use)
+🛡️ Overview
+This is a simple keylogger tool built in Python for educational and ethical use only. It captures and logs all keyboard inputs made on the system and saves them to a text file.
+
+⚠️ Ethical Warning
+🔐 This tool must only be used on machines you own or have explicit permission to monitor. Unauthorized use of keyloggers is illegal and unethical.
+
+🚀 Features
+Records all keystrokes (including special keys like space, enter, etc.).
+
+Saves logged data to a local file (keylog.txt).
+
+Terminates safely when ESC key is pressed.
+
+🛠 Requirements
+Python 3.x
+
+pynput library
+
+Install with:
+pip install pynput
+
+📦 How to Use
+Run the script:
+python keylogger.py
+
+The script will:
+
+Start listening to keyboard input
+
+Save everything to keylog.txt
+
+Stop and exit when you press the ESC key
+
+📝 Output
+Example contents of keylog.txt:
+h e l l o   w o r l d [Enter] [Shift] H e l l o !
+
+Regular characters are logged directly.
+
+Special keys are noted in brackets ([Enter], [Backspace], etc.).
+
+🔐 Security & Limitations
+Not obfuscated or hidden — visible in the task manager.
+
+For demonstration and practice purposes only.
+
+Does not support stealth or persistence (not designed for malicious use).

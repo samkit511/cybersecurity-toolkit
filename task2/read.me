@@ -1,0 +1,66 @@
+Image Encryption & Decryption Tool (Pixel Manipulation)
+🔐 Overview
+This Python script provides a basic tool to encrypt and decrypt images using simple pixel manipulation techniques. It adds or subtracts a numeric key from each pixel's RGB values, altering the image content in a reversible way.
+
+This is a great educational project to understand how image data can be transformed programmatically.
+
+🚀 Features
+Encrypts any standard image format (PNG, JPEG, etc.).
+
+Decrypts previously encrypted images using the same numeric key.
+
+Preserves the original image size and format.
+
+Simple logic using RGB value manipulation.
+
+Works offline and does not require internet access.
+
+🛠 Requirements
+Python 3.x
+
+Pillow library for image processing
+
+Install with:
+pip install pillow
+
+📦 How to Use
+Run the script:
+python image_encryptor.py
+
+Follow the prompts:
+
+Choose encrypt or decrypt.
+
+Enter the path to your image file.
+
+Provide a numeric key (between 0–255).
+
+Output:
+
+Encrypted/decrypted image is saved as:
+
+encrypted_image.png or decrypted_image.png
+
+🔁 How It Works
+Encryption: Adds the key to each RGB value in the image (mod 256).
+
+Decryption: Subtracts the key from each RGB value (mod 256).
+
+The operation is reversible only if the same key is used.
+
+Mode: encrypt
+Image path: myphoto.jpg
+Key: 42
+→ Saved as: encrypted_image.png
+
+Mode: decrypt
+Image path: encrypted_image.png
+Key: 42
+→ Saved as: decrypted_image.png
+
+⚠️ Notes
+Always back up original images before encryption.
+
+This tool does not offer true security and is for educational/demo purposes only.
+
+Use the same key for both encryption and decryption, or the image will not be restored correctly.
